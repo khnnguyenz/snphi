@@ -186,7 +186,7 @@
         if (skipped) break;
         w.classList.add('on'); follow(w);
         const t = w.textContent;
-        await sleep(still ? 0 : 62 + (/[,.!?]$/.test(t) ? 260 : 0));
+        await sleep(still ? 0 : 10 + (/[,.!?]$/.test(t) ? 260 : 0));
       }
       if (skipped) break;
       await sleep(still ? 0 : 520);
