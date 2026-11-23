@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14040f">
+<title>Chúc mừng sinh nhật Phi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playpen+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<h2 id="lead">Một món quà nhỏ dành cho Phi</h2>
+
+<button id="gift" class="gift" aria-label="Chạm để mở hộp quà">
+  <div class="glow"></div>
+  <div class="beam"></div>
+  <div class="drop">
+    <div class="shadow"></div>
+    <div class="float">
+      <div class="spin" id="spin">
+        <div class="box">
+          <div class="f rb c1 front"></div>
+          <div class="f rb c2 right"></div>
+          <div class="f rb c3 back"></div>
+          <div class="f rb c4 left"></div>
+          <div class="f bottom"></div>
+          <div class="f floor"></div>
+          <div class="lid">
+            <div class="g rb d1 front"></div>
+            <div class="g rb d2 right"></div>
+            <div class="g rb d3 back"></div>
+            <div class="g rb d4 left"></div>
+            <div class="g top"></div>
+            <div class="g under"></div>
+            <div class="bow">
+              <div class="plane"><i class="lp a"></i><i class="lp b"></i></div>
+              <div class="plane p2"><i class="lp a"></i><i class="lp b"></i></div>
+              <i class="knot"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</button>
+<p id="hint">Chạm vào hộp quà nhé</p>
+
+<section id="letter" aria-hidden="true">
+  <button id="skip" class="skip">Hiện hết</button>
+  <button id="close" class="close" aria-label="Đóng thư">×</button>
+  <article class="paper" id="paper">
+    <div class="seal">♥</div>
+    <p class="txt head">Gửi Phi, người tui thương nhất! ❤️</p>
+    <p class="txt">Đầu tiên, tui muốn gửi đến Phi một lời chúc mừng sinh nhật thật nhiều yêu thương. Chúc Phi tuổi mới luôn vui vẻ, bình an, gặp thật nhiều điều tốt đẹp và lúc nào cũng giữ được nụ cười trên môi. Mong rằng những điều Phi mong muốn đều sẽ dần trở thành hiện thực, những ngày tháng phía trước sẽ luôn dịu dàng với Phi.</p>
+    <p class="txt">Thật ra tui đã suy nghĩ khá nhiều không biết nên viết gì cho ngày đặc biệt này, vì có nhiều điều tui muốn nói với Phi lắm, nhưng đôi khi những lời nói bình thường lại chẳng thể diễn tả hết được tình cảm mà tui dành cho Phi.</p>
+    <p class="txt">Tui biết chuyện tình của chúng mình không phải lúc nào cũng suôn sẻ. Chúng mình đã từng có khoảng thời gian bên nhau, rồi cũng từng xa nhau. Có lẽ khoảng thời gian ấy đã khiến cả hai có những cảm xúc và suy nghĩ riêng. Nhưng thật vui vì cuối cùng, vào ngày 1/11, chúng mình lại có cơ hội quay về bên nhau. Đối với tui, đó là một ngày rất đặc biệt. Tui không biết tương lai sẽ ra sao, nhưng tui biết rằng ở hiện tại, tui thật sự muốn yêu thương Phi bằng tất cả sự chân thành của mình.</p>
+    <p class="txt">Phi biết không, tui yêu Phi nhiều lắm. Không chỉ là thích hay đơn giản là muốn có một người ở bên cạnh, mà là tui thật sự thương Phi, muốn quan tâm Phi, muốn biết hôm nay Phi vui hay buồn, muốn được lắng nghe những câu chuyện nhỏ nhặt trong ngày của Phi. Tui muốn những lúc Phi mệt mỏi sẽ có tui ở bên động viên, những lúc Phi vui sẽ có tui cùng chia sẻ niềm vui ấy. Tui cũng mong rằng mình có thể trở thành một người khiến Phi cảm thấy được yêu thương và an toàn.</p>
+    <p class="txt">Tui không dám hứa rằng chúng mình sẽ chẳng bao giờ giận dỗi hay gặp khó khăn, nhưng tui mong cả hai sẽ luôn cố gắng lắng nghe, thấu hiểu và dành cho nhau sự bao dung. Nếu có điều gì chưa tốt, chúng mình cùng sửa đổi nhé. Tui không mong một tình yêu hoàn hảo, tui chỉ mong chúng mình có thể cùng nhau trưởng thành và giữ gìn tình cảm này thật lâu.</p>
+    <p class="txt">Cảm ơn Phi vì đã xuất hiện trong cuộc sống của tui, và cảm ơn Phi vì đã cho chúng mình thêm một cơ hội. Tui thật sự trân trọng điều đó. Mong rằng sinh nhật năm nay sẽ là một ngày thật đáng nhớ đối với Phi, và tui cũng hy vọng mình sẽ còn được đồng hành cùng Phi qua thật nhiều mùa sinh nhật nữa.</p>
+    <p class="txt">Chúc mừng sinh nhật Phi, người mà tui thương rất nhiều. Mong Phi luôn hạnh phúc, luôn được yêu thương và hãy nhớ rằng có một người luôn mong những điều tốt đẹp nhất sẽ đến với Phi.</p>
+    <p class="txt final">Tui yêu Phi nhiều lắm. Thương Phi cực kì luôn! ❤️</p>
+    <p class="txt sign">Kha</p>
+  </article>
+</section>
+
+<main id="hero">
+  <p class="hello">Gửi Phi, người tui thương nhất</p>
+  <h1>Chúc mừng sinh nhật</h1>
+  <p class="name">Phạm Hoàng Phi</p>
+  <p class="date">24/11</p>
+  <button id="again" class="btn">Đọc lại thư</button>
+</main>
+
+<button id="musicBtn" class="music" aria-label="Bật hoặc tắt nhạc">♪</button>
+<script src="script.js"></script>
+</body>
+</html>
